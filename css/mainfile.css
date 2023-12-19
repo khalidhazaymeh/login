@@ -1,0 +1,196 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-ser;
+    height: 100%;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 /20%);
+    --section-padding: 100px;
+
+}
+
+/* Start Media Quires For Screen Size */
+/* Small */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* *********************************************** */
+.login-en{
+  background-image: url(../image/notification_bacground_ar.jpg);
+  background-size: cover;
+min-height: 100vh;
+position: relative;
+}
+
+.login-en .change-lg{
+
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  background-color: #980C22;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 5px;
+}
+.login-en .change-lg:first-child{
+  margin-bottom: 50px;
+}
+
+@media (max-width:900px){
+  .login-en{
+    background-image: none;
+    background-color: #777;
+  }
+}
+
+.login-en .form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  
+  background-image: url(../image/notification_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 500px;
+  top: 10%;
+  left: 20%;
+  transform: translateX(-50%);
+
+}
+
+@media (max-width:900px){
+  .login-en .form-container{
+  
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.login-en .form-container .head-text{
+  position: absolute;
+  top: 42%;
+  left: 5%;
+  color: white;
+}
+
+.login-en .form-container .description{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: black;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  display: block;
+}
+
+
+.login-en .form-container form{
+flex-basis: 100%;
+position: absolute;
+bottom: -26%;
+transform: translateY(-50%);
+  
+}
+.login-en .form-container form .user{
+  margin-top: 50px;
+}
+.login-en .form-container form .main-input{
+  
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-en .form-container form .main-input:focus{
+  outline: none;
+}
+
+.login-en .form-container form .btn-login{
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+background-color: #980C22;
+padding: 10px 30px;
+border-radius: 20px;
+
+color: white;
+border: none;
+
+}
+
+.login-en .form-container form .forgetpws{
+  background-color: white;
+  color: #980C22;
+}
+
+
+
+
+
+
+
+
+
+
+
